@@ -117,11 +117,11 @@ li.active{
   }
 
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 450px) {
   .reward{
    padding-right:5px;
     padding-left:5px;
-    font-size: 16px !important;
+    font-size: 15px !important;
   }
   
 }
@@ -307,7 +307,7 @@ myObj={
    "nickname":"Azeem Suleiman Sardar#SurrSangeet",
    "headimg":"1484238227494.jpeg",
    "targetid":2001200,
-   "number":11232,
+   "number":11234,
    "coins":11202
  },
  {
@@ -524,7 +524,9 @@ var container = document.getElementById("demo");
 for (var i = 0; i < 30; i++) {
   var res = myObj.data[i].nickname.substring(0, 12);
   res=res+" ...";
-    container.innerHTML += '<div class="row"><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/medalgold2.png" class="my_img"></div><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/sample.jpg" class="img img-circle my_img"></div><div class="col-sm-6 col-md-8 col-xs-8"> <div class="row row_merg"><p class="font_name">'+res+'</p></div><div class="row row_bot"><div class="col-sm-2 col-md-1 col-xs-1"><img reward src="img/moon_final.png" class="img img_gift"></div><div class="col-sm-2 col-md-1 col-xs-2 reward">'+myObj.data[i].number  +'</div><div class="col-sm-2 col-md-1 col-xs-1"><img src="img/Coin.png" class="img img_gift"></div><div class="col-sm-2 col-md-1 col-xs-2 reward">'+myObj.data[i].coins +'</div></div></div></div>'+'</div>';
+  //var number = myObj.data[i].number.substring(0, 8);
+  // var coins = myObj.data[i].coins.substring(0, 9);
+    container.innerHTML += '<div class="row"><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/medalgold2.png" class="img img-circle my_img"></div><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/sample.jpg" class="img img-circle my_img"></div><div class="col-sm-6 col-md-8 col-xs-8"> <div class="row row_merg"><p class="font_name">'+res+'</p></div><div class="row row_bot"><div class="col-sm-1 col-md-1 col-xs-1"><img reward src="img/moon_final.png" class="img img_gift"></div><div class="col-sm-3 col-md-1 col-xs-2 reward">'+myObj.data[i].number  +'</div><div class="col-sm-1 col-md-1 col-xs-1"><img src="img/Coin.png" class="img img_gift"></div><div class="col-sm-3 col-md-1 col-xs-2 reward">'+myObj.data[i].coins +'</div></div></div></div>'+'</div>';
 }
 </script>
 
