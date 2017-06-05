@@ -3360,8 +3360,8 @@ nav ul a span.badge {
 }
 
 .container .row {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
+    margin-left: -0.30rem;
+    margin-right: -0.30rem;
 }
 
 .section {
