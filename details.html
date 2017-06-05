@@ -165,6 +165,21 @@ ul{
 .row_bot{
      margin-left: -15px !important;
 }
+.numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+
+       width: 30px;
+    height: 30px;
+    padding: 0px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 24px Arial, sans-serif;
+    margin-top: 5px;
+        padding-right: 1px;
+}
  </style>
 </head>
 <body id="bg-img">
@@ -527,15 +542,26 @@ myObj={
 
 var text = "";
 var i; 
-
+var j=1;
 
 var container = document.getElementById("demo");
 for (var i = 0; i < 30; i++) {
   var res = myObj.data[i].nickname.substring(0, 12);
   res=res+" ...";
-  //var number = myObj.data[i].number.substring(0, 8);
-  // var coins = myObj.data[i].coins.substring(0, 9);
+  
+  if(j==1){
     container.innerHTML += '<div class="row"><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/medalgold.png" class="img img-circle my_img1"></div><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/sample.jpg" class="img img-circle my_img"></div><div class="col-sm-6 col-md-8 col-xs-8"> <div class="row row_merg"><p class="font_name">'+res+'</p></div><div class="row row_bot"><div class="col-sm-1 col-md-1 col-xs-1"><img reward src="img/moon_final.png" class="img img_gift"></div><div class="col-sm-3 col-md-1 col-xs-2 reward">'+myObj.data[i].number  +'</div><div class="col-sm-1 col-md-1 col-xs-1"><img src="img/Coin.png" class="img img_gift"></div><div class="col-sm-3 col-md-1 col-xs-2 reward">'+myObj.data[i].coins +'</div></div></div></div>'+'</div>';
+  }
+  j++;
+  if(j==2){
+    container.innerHTML += '<div class="row"><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/medalsilver.png" class="img img-circle my_img1"></div><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/sample.jpg" class="img img-circle my_img"></div><div class="col-sm-6 col-md-8 col-xs-8"> <div class="row row_merg"><p class="font_name">'+res+'</p></div><div class="row row_bot"><div class="col-sm-1 col-md-1 col-xs-1"><img reward src="img/moon_final.png" class="img img_gift"></div><div class="col-sm-3 col-md-1 col-xs-2 reward">'+myObj.data[i].number  +'</div><div class="col-sm-1 col-md-1 col-xs-1"><img src="img/Coin.png" class="img img_gift"></div><div class="col-sm-3 col-md-1 col-xs-2 reward">'+myObj.data[i].coins +'</div></div></div></div>'+'</div>';
+  }
+  if(j==3){
+    container.innerHTML += '<div class="row"><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/medalbronze.png" class="img img-circle my_img1"></div><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/sample.jpg" class="img img-circle my_img"></div><div class="col-sm-6 col-md-8 col-xs-8"> <div class="row row_merg"><p class="font_name">'+res+'</p></div><div class="row row_bot"><div class="col-sm-1 col-md-1 col-xs-1"><img reward src="img/moon_final.png" class="img img_gift"></div><div class="col-sm-3 col-md-1 col-xs-2 reward">'+myObj.data[i].number  +'</div><div class="col-sm-1 col-md-1 col-xs-1"><img src="img/Coin.png" class="img img_gift"></div><div class="col-sm-3 col-md-1 col-xs-2 reward">'+myObj.data[i].coins +'</div></div></div></div>'+'</div>';
+  }
+  if(j>=4){
+    container.innerHTML += '<div class="row"><div class="col-sm-2 col-md-2 col-xs-2"> <div class="numberCircle">'+j+'</div></div><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/sample.jpg" class="img img-circle my_img"></div><div class="col-sm-6 col-md-8 col-xs-8"> <div class="row row_merg"><p class="font_name">'+res+'</p></div><div class="row row_bot"><div class="col-sm-1 col-md-1 col-xs-1"><img reward src="img/moon_final.png" class="img img_gift"></div><div class="col-sm-3 col-md-1 col-xs-2 reward">'+myObj.data[i].number  +'</div><div class="col-sm-1 col-md-1 col-xs-1"><img src="img/Coin.png" class="img img_gift"></div><div class="col-sm-3 col-md-1 col-xs-2 reward">'+myObj.data[i].coins +'</div></div></div></div>'+'</div>';
+  }
 }
 </script>
 
