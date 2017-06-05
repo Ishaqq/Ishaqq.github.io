@@ -57,6 +57,8 @@
   }
 	.font_name{
 		font-size:20px;
+    margin-right: 0px !important;
+   /* margin-right: 0px !important;*/
 	}
 	.img_gift{
 		height:18px; width:18px; margin-top:0px !important;
@@ -175,8 +177,8 @@ ul{
    /* border: 2px solid #666;*/
     color: #666;
     text-align: center;
-    font: 25px Arial, sans-serif;
-    margin-top: 5px;
+    font: 20px Arial, sans-serif;
+    margin-top: 8px;
     padding-right: 5px;
 }
 ol.a {
@@ -211,7 +213,7 @@ ol.a {
           </div>
         </div>
         <div class="row">
-        	 <p class="re-pera">The competition will start on 5-06-2017, 00:00:00 and end on 20-0-2017, 23:59:59.</p>
+        	 <p class="re-pera">The competition will start on 8-06-2017, 00:00:00 and end on 20-0-2017, 23:59:59.</p>
         </div>
       </div>
 
@@ -224,7 +226,7 @@ ol.a {
         </div>
         <div class="row">
         	 <p class="re-pera">Every streamer and user will automatically join
-                        the competition at 00:00:00 on 05-06-2017.<br><br>
+                        the competition at 00:00:00 on 08-06-2017.<br><br>
 
                         Winner will be based upon number of special
                         Ramadan animated gift sent and received.<br><br>
@@ -557,7 +559,7 @@ var j=1;
 var container = document.getElementById("demo");
 for (var i = 0; i < 30; i++) {
   var res = myObj.data[i].nickname.substring(0, 12);
-  res=res+" ...";
+  res=res+"...";
   
   if(j==1){
     container.innerHTML += '<div class="row"><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/medalgold.png" class="img  my_img1"></div><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/sample.jpg" class="img img-circle my_img"></div><div class="col-sm-6 col-md-8 col-xs-8"> <div class="row row_merg"><p class="font_name">'+res+'</p></div><div class="row row_bot"><div class="col-sm-1 col-md-1 col-xs-1"><img reward src="img/moon_final.png" class="img img_gift"></div><div class="col-sm-3 col-md-1 col-xs-2 reward">'+myObj.data[i].number  +'</div><div class="col-sm-1 col-md-1 col-xs-1"><img src="img/Coin.png" class="img img_gift"></div><div class="col-sm-3 col-md-1 col-xs-2 reward">'+myObj.data[i].coins +'</div></div></div></div>'+'</div>';
