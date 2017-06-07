@@ -111,6 +111,18 @@ li.active{
 .re-pera{
   padding-left: 10px;
 }
+ @media only screen and (max-width: 320px) {
+.img_gift{
+    height:18px; width:18px; margin-top:0px !important;
+  }
+  .reward{
+    margin-left: 0px !important;
+    margin-right: 15px !important;
+    font-size:16px; color:#868686;
+    margin-top:1px !important;
+        padding-top: 3px;
+  }
+}
  @media only screen and (max-width: 350px) {
   h5{
    padding-left: 25px;
@@ -667,9 +679,26 @@ for (var i = 0; i < myObj.data.length; i++) {
 }
 
 </script>
-
+<style type="text/css">
+  .relative{position:relative;}
+.absolute-text{position:absolute; bottom:0; font-size:24px; font-family:"vedana"; color: white;
+padding:10px 20px; width:100%; text-align:center;}
+.absolute-text a{font-size:16px; color:#b92b27;}
+</style>
 <footer>
-	<img  class="img img-responsive" src="img/mosque.png">
+<div class="relative">
+	<img  class="img img-responsive" src="img/mosque.png" >
+  <span class="absolute-text" onclick="myFunction()">Rules & Prizes</span>
+  <script type="text/javascript">
+    function myFunction(){
+       $( "#board" ).removeClass( "active" );
+  $( "#event" ).addClass( "active" );
+  $("#test1").addClass("tab-pane fade in active");
+   $("#test2").removeClass("in active");
+ $('#event').trigger('click'); 
+    }
+  </script>
+</div>
 </footer>
 </div>
 </body>
