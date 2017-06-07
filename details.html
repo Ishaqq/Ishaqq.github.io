@@ -198,6 +198,9 @@ ol.a {
   .draw-line{
     border-bottom: 1px solid rgba(160, 160, 160, 0.12);
   }
+  .clear{
+    clear: both;
+  }
  </style>
 </head>
 <body id="bg-img">
@@ -212,11 +215,13 @@ ol.a {
 
 <div class="row">
   <img  class="img img-responsive" src="scss/rewards.png" style="margin-bottom: 8px;">
-  <img  class="img img-responsive" src="scss/start_countdown.png" style="margin-bottom: 8px;" id="countdown2">
-  <img  class="img img-responsive" src="scss/countdown2.png" id="countdown1" style="display: none;">
+  <img  class="img img-responsive clear" src="scss/start_count_down.png" style="margin-bottom: 8px;" id="countdown1">
+  <div class="row clear">
+  <img  class="img img-responsive clear" src="scss/count_down.png" id="countdown2" style="display: none;">
+  </div>
 </div>
      <script type="text/javascript" src="scss/build/jquery.syotimer.min.js"></script>
-     <script type="text/javascript" src="scss/build/jquery.syotimer.min.js.map"></script>
+    
      <script type="text/javascript">
         $(document).ready(function(){
             /* Simple Timer. The countdown to 20:30 2100.05.09
@@ -224,9 +229,9 @@ ol.a {
             $('#simple_timer').syotimer({
                 year: 2017,
                 month: 6,
-                day: 8,
-                hour: 0,
-                minute: 0,
+                day: 7,
+                hour: 21,
+                minute: 28,
                 timeZone: 1
 
             });
@@ -234,14 +239,14 @@ ol.a {
         });
 
         function function2(){
-  $("#countdown2").css("display", "none"); 
-$("#countdown1").css("display", "unset");
+  $("#countdown1").css("display", "none"); 
+ $("#countdown2").css("display", "block");
    $('#simple_timer').syotimer({
                 year: 2017,
                 month: 6,
-                day: 21,
-                hour: 0,
-                minute: 0,
+                day: 7,
+                hour: 21,
+                minute: 29,
                 timeZone: 1
 
             });
