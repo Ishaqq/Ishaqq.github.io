@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=-1, maximum-scale=1.0"/>
-  <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
   <title>Rehmat-e-Ramadan</title>
 
 <!-- bootstrap library -->
@@ -60,7 +59,7 @@
     height:39px; width:30px; margin-top: 5px; 
   }
   .font_name{
-    font-size:15px;
+    font-size:20px;
     margin-right: 0px !important;
    /* margin-right: 0px !important;*/
   }
@@ -94,7 +93,9 @@ li.active{
     color: #edaa23 !important;
     border: none !important;
 }
-
+.active{
+   background:rgba(255, 255, 255, 0.29)
+}
 .nav-tabs {
     border-bottom: none !important;
     margin-bottom: 0px !important;
@@ -115,18 +116,6 @@ li.active{
 .re-pera{
   padding-left: 10px;
 }
- @media only screen and (max-width: 320px) {
-.img_gift{
-    height:18px; width:18px; margin-top:0px !important;
-  }
-  .reward{
-    margin-left: 0px !important;
-    margin-right: 15px !important;
-    font-size:16px; color:#868686;
-    margin-top:1px !important;
-        padding-top: 3px;
-  }
-}
  @media only screen and (max-width: 350px) {
   h5{
    padding-left: 25px;
@@ -137,13 +126,13 @@ li.active{
   .my_img1{
     margin-top: 7px; 
   }
+
 }
 @media only screen and (max-width: 450px) {
   .reward{
    padding-right:5px;
     padding-left:5px;
-        font-size: 12px !important;
-    padding-top: 2px;
+    font-size: 15px !important;
   }
   
 }
@@ -202,9 +191,6 @@ ol.a {
   .draw-line{
     border-bottom: 1px solid rgba(160, 160, 160, 0.12);
   }
-   .clear{
-    clear: both;
-  }
  </style>
 </head>
 <body id="bg-img">
@@ -219,13 +205,12 @@ ol.a {
 
 <div class="row">
   <img  class="img img-responsive" src="scss/rewards.png" style="margin-bottom: 8px;">
-  <img  class="img img-responsive clear" src="scss/start_countdown.png" style="margin-bottom: 8px;" id="countdown1">
-  <div class="row clear">
-  <img  class="img img-responsive clear" src="scss/countdown2.png" id="countdown2" style="display: none;">
+  <img  class="img img-responsive" src="scss/start_countdown.png" style="margin-bottom: 8px;" id="countdown2">
+  <div class="row">
+  <img  class="img img-responsive" src="scss/countdown2.png" id="countdown1" style="display: none;">
   </div>
 </div>
      <script type="text/javascript" src="scss/build/jquery.syotimer.min.js"></script>
-     <script type="text/javascript" src="scss/build/jquery.syotimer.min.js.map"></script>
      <script type="text/javascript">
         $(document).ready(function(){
             /* Simple Timer. The countdown to 20:30 2100.05.09
@@ -233,35 +218,30 @@ ol.a {
             $('#simple_timer').syotimer({
                 year: 2017,
                 month: 6,
-                day: 8,
-                hour: 5,
-                minute: 8,
-                timeZone: 1
-
+                day: 20,
+                hour: 00,
+                minute: 00
             });
 
         });
-
-        function function2(){
-           $("#countdown1").css("display", "none"); 
-           $("#countdown2").css("display", "block");
-           $("#countdown2").css("display", "none"); 
-           $("#countdown1").css("display", "unset");
-           $('#simple_timer').syotimer({
-                        year: 2017,
-                        month: 6,
-                         day: 8,
-                        hour: 5,
-                        minute: 9,
-                        timeZone: 1
+          function function2(){
+  $("#countdown2").css("display", "none"); 
+$("#countdown1").css("display", "unset");
+   $('#simple_timer').syotimer({
+                year: 2017,
+                month: 6,
+                day: 20,
+                hour: 21,
+                minute: 0,
+                timeZone: 1
 
             });
-        }
+}
     </script>
     <style type="text/css">
         #rewards{
             font-family: Tahoma, serif;
-            font-size: 12px;
+            font-size: 14px;
             padding: 0 0 100px;
             color: white !important;
         }
@@ -298,63 +278,18 @@ ol.a {
 
         #simple_timer.timer .table-cell.day,
         #periodic_timer_days.timer .table-cell.hour{
-            width: 60px;
+            width: 50px;
             background-image: url(scss/demos/images/timer.png);
-        }
-        @media only screen and (max-width: 320px) {
-
-          #rewards{
-            font-family: Tahoma, serif;
-            font-size: 10px;
-            padding: 0 0 80px;
-            color: white !important;
-        }
-        .tab-metr{
-          color: white;
-        }
-        /* Customization Style of SyoTimer */
-        .timer{
-            text-align: center;
-
-            margin: 0px auto 0;
-            padding: 0 0 10px;
-        }
-        .timer .table-cell{
-            display: inline-block;
-            margin: 0 5px;
-            width: 40px;
-            background: url(scss/demos/images/timer2.png) no-repeat 0 0;
-        }
-        .timer .table-cell .tab-val{
-            font-size: 20px;
-            color: #f4f4f5;
-            height: 55px;
-            line-height: 35px;
-           margin-left: -8px !important;
-            margin: 0 0 5px;
-            padding-top: 2px;
-            padding-left: 9px;
-        }
-        .timer .table-cell .tab-unit{
-            font-family: Arial, serif;
-            font-size: 10px;
-            text-transform: uppercase;
-                margin-top: -5px;
-        }
-
-        #simple_timer.timer .table-cell.day,
-        #periodic_timer_days.timer .table-cell.hour{
-            width: 40px;
-            background-image: url(scss/demos/images/timer2.png);
-        }
         }
     </style>
     <div class="row">
     <div id="simple_timer" class="col-sm-12 col-xs-12 col-md-12"></div>  
     </div>
 
+
+    
 <div class="row">
-  <ul class="nav nav-tabs tabs">
+ <ul class="nav nav-tabs tabs">
       <li id="event"><a data-toggle="tab" href="#test1"><b id="">Event Details</b></a></li>
       <li class="active" id="board"><a data-toggle="tab" href="#test2"><b id="lead">LeaderBoard</b></a></li>
    </ul>
@@ -376,19 +311,13 @@ ol.a {
 
       <div class="marg_left ">  
         <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-2"> <img style="height:30px; width:30px; margin-top: 7px; text-align: left; "  src="img/rules.png"></div>
+          <div class="col-sm-1 col-md-1 col-xs-2"> <img style="height:30px; width:30px; margin-top: 7px;  " src="img/rules.png"></div>
           <div class="col-sm-9 col-md-9 col-xs-9 heading_main" style="" >             
             <h5 style="text-align: left; " >Rules</h5>
           </div>
         </div>
         <div class="row">
-          <div style="text-align: center; margin-top: -5px;">
-            <img style="width: 70%;" src="img/aftari_ramadan.png">
-          </div>
-          <p style="text-align: center; font-size: 11px;">*Send this special aftari gift to increase your ranking.*</p>
-        </div>
-        <div class="row">
-           <p class="re-pera">Every streamer and user will automatically join
+            <p class="re-pera">Every streamer and user will automatically join
                         the competition 08-06-2017.<br><br>
 
                         Winner will be based upon number of special
@@ -570,26 +499,8 @@ for (var i = 0; i < myObj.data.length; i++) {
 
 </script>
 
-<style type="text/css">
-  .relative{position:relative;}
-.absolute-text{position:absolute; bottom:0; font-size:24px; font-family:"vedana"; color: white;
-padding:10px 20px; width:100%; text-align:center;}
-.absolute-text a{font-size:16px; color:#b92b27;}
-</style>
 <footer>
-<div class="relative">
-  <img  class="img img-responsive" src="img/mosque.png" >
-  <span class="absolute-text" onclick="myFunction()" style="font-size: 15px;">Rules & Prizes<hr style="width: 35%; margin-top: 0px !important;"></span>
-  <script type="text/javascript">
-    function myFunction(){
-  $( "#board" ).removeClass( "active" );
-  $( "#event" ).addClass( "active" );
-  $("#test1").addClass("tab-pane fade in active");
-   $("#test2").removeClass("in active");
- $('#event').trigger('click'); 
-    }
-  </script>
-</div>
+  <img  class="img img-responsive" src="img/mosque.png">
 </footer>
 </div>
 </body>
