@@ -47,7 +47,7 @@
         headTitle: '', // текст над таймером (можно в HTML формате)
         footTitle: '', // текст под таймером (можно в HTML формате)
         afterDeadline: function(timerBlock){
-            timerBlock.bodyBlock.html('<p style="font-size: 1.2em;">The countdown is finished!</p>');
+            timerBlock.bodyBlock.html('<p style="font-size: 1.2em; color:white;">The event is finished!</p>');
         }
     };
 
