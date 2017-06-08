@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=-1, maximum-scale=1.0"/>
   <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
-<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-<META HTTP-EQUIV="Expires" CONTENT="0">
   <title>Rehmat-e-Ramadan</title>
 
 <!-- bootstrap library -->
@@ -201,7 +202,7 @@ ol.a {
   .draw-line{
     border-bottom: 1px solid rgba(160, 160, 160, 0.12);
   }
-  .clear{
+   .clear{
     clear: both;
   }
  </style>
@@ -218,13 +219,13 @@ ol.a {
 
 <div class="row">
   <img  class="img img-responsive" src="scss/rewards.png" style="margin-bottom: 8px;">
-  <img  class="img img-responsive clear" src="scss/start_count_down.png" style="margin-bottom: 8px;" id="countdown1">
+  <img  class="img img-responsive clear" src="scss/start_countdown.png" style="margin-bottom: 8px;" id="countdown1">
   <div class="row clear">
-  <img  class="img img-responsive clear" src="scss/count_down.png" id="countdown2" style="display: none;">
+  <img  class="img img-responsive clear" src="scss/countdown2.png" id="countdown2" style="display: none;">
   </div>
 </div>
      <script type="text/javascript" src="scss/build/jquery.syotimer.min.js"></script>
-    
+     <script type="text/javascript" src="scss/build/jquery.syotimer.min.js.map"></script>
      <script type="text/javascript">
         $(document).ready(function(){
             /* Simple Timer. The countdown to 20:30 2100.05.09
@@ -232,28 +233,30 @@ ol.a {
             $('#simple_timer').syotimer({
                 year: 2017,
                 month: 6,
-                day: 7,
-                hour: 23,
-                minute: 38,
+                day: 8,
+                hour: 0,
+                minute: 0,
                 timeZone: 1
 
             });
 
         });
 
-        function function2(){      
-  $("#countdown1").css("display", "none"); 
- $("#countdown2").css("display", "block");
-   $('#simple_timer').syotimer({
-                year: 2017,
-                month: 6,
-                day: 7,
-                hour: 23,
-                minute: 39,
-                timeZone: 1
-  
+        function function2(){
+           $("#countdown1").css("display", "none"); 
+           $("#countdown2").css("display", "block");
+           $("#countdown2").css("display", "none"); 
+           $("#countdown1").css("display", "unset");
+           $('#simple_timer').syotimer({
+                        year: 2017,
+                        month: 6,
+                        day: 21,
+                        hour: 0,
+                        minute: 0,
+                        timeZone: 1
+
             });
-}
+        }
     </script>
     <style type="text/css">
         #rewards{
@@ -389,17 +392,17 @@ ol.a {
                         the competition 08-06-2017.<br><br>
 
                         Winner will be based upon number of special
-                        Ramadan animated gift sent and received.<br><br>
+                        <B>Aftari animated gift</B> sent and received.<br><br>
 
-                        1 animated gift sent will be counted as 1 point
+                        1 <B>Aftari animated gift</B> sent will be counted as 1 point
                         on the ranking board.<br><br>
 
-                        Any gift sent after 20-06-2017. will
+                        Any gift sent after 20-06-2017(before end of Countdown timer). will
                         not be counted by the system for this
                         competition.<br><br>
 
-                        Other regular gifts sent to any streamer by any
-                        user will not be counted for this competition<br><br>
+                        <font color="red">Other regular gifts sent to any streamer by any
+                        user will not be counted for this competition.<br><br></font>
 
                         Winners will be announced
                         on 21-06-2017.
@@ -428,9 +431,9 @@ ol.a {
                            Top 3 Users on the ranking board as per 20-06-2017 will be given:<br/><br/>
 
                           <ol>
-                            <li> Super VIP access, slider photo on the homescreen of Streamer application and 50,000 free coins.</li>
-                            <li> Super VIP access and 25,000 free coins.</li>
-                            <li>Super VIP access</li>
+                            <li> One month Super VIP access, slider photo on the homescreen of Streamer application and 50,000 free coins.</li>
+                            <li> One month Super VIP access and 25,000 free coins.</li>
+                            <li>One month Super VIP access</li>
                           </ol>  
 
                           <br /><br />
