@@ -202,28 +202,28 @@ var d = new Date();
 var n = d.getMonth();
 var month;
 if(n==5){
- month="May's Super Stars";
+ month="May's Superstars";
 }
 if(n==6){
- month="June's Super Stars";
+ month="June's Superstars";
 }
 if(n==7){
- month="July's Super Stars";
+ month="July's Superstars";
 }
 if(n==8){
- month="Agust's Super Stars";
+ month="Agust's Superstars";
 }
 if(n==9){
- month="September's Super Stars";
+ month="September's Superstars";
 }
 if(n==10){
- month="October's Super Stars";
+ month="October's Superstars";
 }
 if(n==11){
- month="November's Super Stars";
+ month="November's Superstars";
 }
 if(n==12){
- month="December's Super Stars";
+ month="December's Superstars";
 }
 var month_sup=document.getElementById("month_sup");
 month_sup.innerHTML=month;
