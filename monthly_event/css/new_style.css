@@ -2,12 +2,23 @@
      background: url(img/ranking_top.png) right bottom no-repeat, url(2.png) right top repeat;
     padding: 15px;
    }*/
+   body{
+     background-color: rgba(128, 128, 128, 0.18);
+   }
    .header_background{
     position: relative;
     margin-top: 30px;
    }
+   .container {
+    margin: -37px auto !important;
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: absolute;}
+
    #bg-img {
-       background-color: #230a66;
+       background-color: #5C4299;
    }
    .heading {
        color: white;
@@ -16,14 +27,54 @@
    a:hover {
        text-decoration: none;
    }
-   .tab-content {
+   a{
+    color: white !important;
+    font-size: 15px;
+   }
+  /* .tab-content {
        background-color: white;
        border-radius: 10px;
        margin-top: -30px !important;
+       position: absolute !important;
+        width: 82%;
+   }*/
+   .new-tab-back{
+       background-color: white;
+       border-radius: 10px;
+       margin-top: -30px !important;
+     /*  position: absolute !important;*/
+        width: 100%;
+   }
+   .clear { clear: both; }
+   .new-tab-back2{
+       background-color: white;
+       border-radius: 10px;
+       /*margin-top: -30px !important;*/
+       /*position: absolute !important;*/
+        width: 100%;
+   }
+
+    .new-tab-back3{
+       background-color: white;
+       border-radius: 10px;
+       /*margin-top: -30px !important;*/
+       /*position: absolute !important;*/
+        width: 100%;
    }
    .tab a.active {
        background-color: transparent;
        color: #edaa23;
+   }
+   .ranking-top{
+    margin: 25px 0 0px !important;
+    font-size: 15px;
+   }
+   .top-heading{
+    margin-top: -35px;
+    margin-bottom: 10px;
+   }
+   .top-users{
+    color: #868686;
    }
    .marg_left {
        margin-left: 25px;
@@ -42,9 +93,14 @@
        margin-top: 5px;
    }
    .my_img1 {
-           height: 30px;
-          width: 30px;
+           height: 35px;
+          /*width: 30px;*/
           margin-top: 5px;
+   }
+    .my_img_top {
+           height: 35px;
+          /*width: 30px;*/
+          margin-top: 30px;
    }
    .font_name {
        font-size: 15px;
@@ -54,7 +110,7 @@
    .img_gift {
        height: 18px;
        width: 18px;
-       margin-top: 0px !important;
+           margin-top: -3px !important;
    }
    .reward {
        margin-left: 1px !important;
@@ -93,7 +149,7 @@
    .nav-tabs>li.active>a:focus,
    .nav-tabs>li.active>a:hover {
        background: transparent !important;
-       color: #edaa23 !important;
+       color: #f9f9f8 !important;
        border: none !important;
        cursor: default;
        border-bottom-color: transparent !important;
@@ -170,7 +226,8 @@
    .nav>li>a {
        position: relative;
        display: block;
-       padding: 10px 5px;
+      padding-top: 30px;
+          margin-bottom: -8px;
    }
    .heading_main {
        padding-left: 15px;
@@ -198,9 +255,9 @@
        display: block;
        list-style-type: square;
    }
-   .draw-line {
+   /*.draw-line {
        border-bottom: 1px solid rgba(160, 160, 160, 0.12);
-   }
+   }*/
    #rewards {
        font-family: Tahoma, serif;
        font-size: 12px;
@@ -352,10 +409,10 @@
        margin-top: 7px;
        text-align: left;
    }
-   .hr-bottom {
+ /*  .hr-bottom {
        width: 35%;
        margin-top: 0px !important;
-   }
+   }*/
    #countdown1 {
        display: none;
    }
@@ -389,6 +446,9 @@
     padding-top: 2px;     color: #868686;
    }
    #month_sup{
+    color: white; text-align: center; padding-bottom: 5px; margin-top: -15px;
+   }
+   #month_sup_talent{
     color: white; text-align: center; padding-bottom: 5px; margin-top: -15px;
    }
    .crown{
@@ -459,3 +519,51 @@
   }
    
  }
+ .btn-img{
+  width:40%; display: block;
+  margin: auto; margin-bottom: 0px;
+ }
+ footer{
+  margin-bottom: 100px;
+ }
+ .toper-rewards{
+  color: #868686;
+  text-align: right;
+ }
+ .toper_names{
+  margin-top: 10px;
+ }
+ .merg-top-6{
+  margin-top: 5px !important;
+ }
+ .new-tab-detail {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: -30px !important;
+    /* position: absolute !important; */
+    width: 100%;
+}
+
+ .new-tab-detail2 {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: -15px !important;
+    /* position: absolute !important; */
+    width: 100%;
+}
+.demo-detail{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*.nav-tabs>li>a {
+    margin-right: 20px;
+    border-bottom: 2px solid red !important;
+  }*/
+  .heading_detail{
+    margin-bottom: 15px !important;
+}
+.nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    border-bottom: 2px solid red !important;
+  }
