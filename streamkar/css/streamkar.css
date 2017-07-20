@@ -60,17 +60,17 @@ body{
 .free-coins{
 	position: absolute;
     left: 1.01rem;
-    top: 2.15rem;
+    top: 1.75rem;
     font-size:  0.8rem;
-	color: #FFD648;
+	color: white;
 	line-height: 1em;
 }
 .coins-num{
     position: absolute;
-    left: 2rem;
-    top: 3.2rem;
+    left: 1.9rem;
+    top: 2.6rem;
     font-size: 0.6rem;
-    color: #FFD648;
+    color: white;
     /*text-shadow: 0 2px 4px rgba(0,0,0,0.50);*/
     line-height: 1em;
 }
@@ -94,7 +94,8 @@ body{
 	width:6.222222rem;
 	height: 1.111111rem;
 	border-radius: 2.777778rem;
-	background:rgba(255,66,255,1);
+	/*background:rgba(255,66,255,1);*/
+	background-image: radial-gradient(50% 73%, #FF974D 46%, #FF3C67 97%);
 	font-size:0.444444rem;
 	line-height:1.111111rem;
 	text-align: center;
@@ -107,6 +108,21 @@ body{
 	margin:0 auto;
 	background-size: cover;
 }
+
+.title_bg2 p {
+       line-height: 0.744444rem;
+    text-align: center;
+    font-size: 0.496667rem;
+    font-weight: bold;
+        margin-top: -0.399rem;
+}
+.title_bg3 p {
+    line-height: 1.44444rem;
+    text-align: center;
+    font-size: 0.496667rem;
+    font-weight: bold;
+    padding-right: 6.3999rem;
+}
 .cover-image .title_bg p{
 	line-height: 1.944444rem;
 	text-align: center;
@@ -114,7 +130,7 @@ body{
 
 }
 .cover-image .content{
-	opacity: 0.6;
+	opacity:  0.9;
 	font-size: 0.388889rem;
 	color: #FFFFFF;
 	line-height: 0.5rem;
@@ -123,12 +139,15 @@ body{
 }
 
 .cover-image .content p{ 
-	margin-bottom: 5px;
+	margin-left: 0.50rem;
+    margin-right: 0.50rem;
+    margin-bottom: 0.30rem;
 }
 
     .fun-cover{
     width: 100%;
     overflow: hidden;
+    margin-top: -0.39rem;
 }
  .fun-cover img{
     width: 100%;
