@@ -95,7 +95,8 @@ body{
 	height: 1.111111rem;
 	border-radius: 2.777778rem;
 	/*background:rgba(255,66,255,1);*/
-	background-image: radial-gradient(50% 73%, #FF974D 46%, #FF3C67 97%);
+	/*background-image: radial-gradient(50% 73%, #FF974D 46%, #FF3C67 97%);*/
+	background: linear-gradient( #FF974D, #FF3C67);
 	font-size:0.444444rem;
 	line-height:1.111111rem;
 	text-align: center;
