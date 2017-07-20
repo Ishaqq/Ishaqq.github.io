@@ -67,7 +67,7 @@ body{
 }
 .coins-num{
     position: absolute;
-    left: 1.9rem;
+    left: 1.81rem;
     top: 2.6rem;
     font-size: 0.6rem;
     color: white;
@@ -111,18 +111,20 @@ body{
 }
 
 .title_bg2 p {
-       line-height: 0.744444rem;
+    line-height: 0.644444rem;
     text-align: center;
-    font-size: 0.496667rem;
+    font-size: 0.396667rem;
     font-weight: bold;
-        margin-top: -0.399rem;
+    margin-top: -0.399rem;
+    margin-left: 0.50rem;
+    margin-right: 0.50rem;
 }
 .title_bg3 p {
-    line-height: 1.44444rem;
+	 line-height: 0.944444rem;
+    font-size: 0.396667rem;
     text-align: center;
-    font-size: 0.496667rem;
     font-weight: bold;
-    padding-right: 6.3999rem;
+    padding-right: 6.6999rem;
 }
 .cover-image .title_bg p{
 	line-height: 1.944444rem;
