@@ -59,10 +59,10 @@
                 var code=searchParams.get("code");
 
                 var hostName=window.location.hostname;
-                document.getElementById("fb_link").setAttribute("href",hostName+"/sns/facebook/authorize?inviteCode="+code);
-                document.getElementById("gp_link").setAttribute("href",hostName+"/sns/google/authorize?inviteCode="+code);
-                document.getElementById("twitter_link").setAttribute("href",hostName+"/sns/twitter/authorize?inviteCode="+code);
-                document.getElementById("instagram_link").setAttribute("href",hostName+"http://www.streamkar.com/sns/instagram/authorize?inviteCode="+code);
+                document.getElementById("fb_link").setAttribute("href","https://"+hostName+"/sns/facebook/authorize?inviteCode="+code);
+                document.getElementById("gp_link").setAttribute("href","https://"+hostName+"/sns/google/authorize?inviteCode="+code);
+                document.getElementById("twitter_link").setAttribute("href","https://"+hostName+"/sns/twitter/authorize?inviteCode="+code);
+                document.getElementById("instagram_link").setAttribute("href","https://"+hostName+"http://www.streamkar.com/sns/instagram/authorize?inviteCode="+code);
               </script>
 
 <script type="text/javascript">
