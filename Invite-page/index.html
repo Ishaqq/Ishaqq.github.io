@@ -18,8 +18,6 @@
                 <p class="name">Sender Name</p>
                 <p class="sender">sent you a gift card</p>
             </div>
-            <p id="demo"></p>
-           
             <div id="img">
                 <div class="fun-cover">
                      <div><img src="img/box.png" alt="" class="fun-cover"></div>
@@ -43,22 +41,30 @@
                 <h4>Login with a social account to begin</h4>
 
                 <div class="row modal-icon">
-                    <a href="http://www.streamkar.com/sns/facebook/authorize?inviteCode=nz8lbs"><img src="img/social_login_fb_ic.png"></a>
-                    <!-- <a href=" http://www.streamkar.com/sns/google/authorize?inviteCode=nz8lbs"><img src="img/social_login_gp_ic.png"></a> -->
-                    <a href=" http://www.streamkar.com/sns/google/authorize?inviteCode=nz8lbs" class="googlePlayBtn"><img src="img/social_login_gp_ic.png"></a>
-                    <a href="http://www.streamkar.com/sns/twitter/authorize?inviteCode=nz8lbs"><img src="img/social_login_twitter_ic.png"></a>
-                    <a href="http://www.streamkar.com/sns/instagram/authorize?inviteCode=nz8lbs"><img src="img/instagram_home.png"></a>
+                    <a href="" id="fb_link"><img src="img/social_login_fb_ic.png"></a>
+                    <a href="" class="googlePlayBtn" id="gp_link"><img src="img/social_login_gp_ic.png" ></a>
+                    <a href="" id="twitter_link"><img src="img/social_login_twitter_ic.png" ></a>
+                    <a href="" id="instagram_link"><img src="img/instagram_home.png" ></a>
                  </div>
                 <!-- <a id="get2" href="https://play.google.com/store/apps/details?id=com.thankyo.hwgame&hl=en">
                     <span class="get2" id="myBtn2">Install Streamkar</span>
                 </a> -->
               </div>
-               <script>
-            var url = window.location.search;
-url = url.replace("?", '');
-            document.getElementById("demo").innerHTML = 
-             window.location.hostname+"?id=fjidsfdsj";
-            </script>
+              <script>
+                var url = window.location.search;
+                url = url.replace("?", '');
+
+                var url=new URLSearchParams(window.location.search);
+                var searchParams = new URLSearchParams(url); 
+                var code=searchParams.get("code");
+
+                var hostName=window.location.hostname;
+                document.getElementById("fb_link").setAttribute("href",hostName+"/sns/facebook/authorize?inviteCode="+code);
+                document.getElementById("gp_link").setAttribute("href",hostName+"/sns/google/authorize?inviteCode="+code);
+                document.getElementById("twitter_link").setAttribute("href",hostName+"/sns/twitter/authorize?inviteCode="+code);
+                document.getElementById("instagram_link").setAttribute("href",hostName+"http://www.streamkar.com/sns/instagram/authorize?inviteCode="+code);
+              </script>
+
 <script type="text/javascript">
 jQuery(document).ready(function ($) {
     $(".googlePlayBtn").click(function (e) {
