@@ -13,8 +13,8 @@
       <div class="container">
          <div class="user-information">
             <div class="information">
-               <img src="img/info.jpg" alt="">
-               <p class="name">Sender Name</p>
+               <img src="img/info.jpg" alt="" id="senderImage">
+               <p class="name" id="senderName"></p>
                <p class="sender">sent you a gift card</p>
             </div>
             <div id="img">
@@ -74,22 +74,12 @@
          </div>
       </div>
       <script type="text/javascript">
-         var url = window.location.search;
-         url = url.replace("?", '');
-         
-         var url=new URLSearchParams(window.location.search);
-         var searchParams = new URLSearchParams(url); 
-         var code=searchParams.get("code");
-         
-         var hostName=window.location.hostname;
-         document.getElementById("fb_link").setAttribute("href","https://"+hostName+"/sns/facebook/authorize?inviteCode="+code);
-         document.getElementById("gp_link").setAttribute("href","https://"+hostName+"/sns/google/authorize?inviteCode="+code);
-         document.getElementById("twitter_link").setAttribute("href","https://"+hostName+"/sns/twitter/authorize?inviteCode="+code);
-         document.getElementById("instagram_link").setAttribute("href","https://"+hostName+"http://www.streamkar.com/sns/instagram/authorize?inviteCode="+code);
-         
-         //check weather app is install or not
+
+
+       //check weather app is install or not
          jQuery(document).ready(function ($) {
          $(".googlePlayBtn").click(function (e) {
+          alert("hey");
          var roomInfo;
          var href;
          console.log(hostname);
@@ -118,6 +108,69 @@
          };
          });
          });
+
+      //return image path
+        var getImagePath = function(path,talentid) {
+                 strtalentid=talentid+"";
+                 head1=strtalentid.substring(0,3);
+                 head2 =strtalentid.substring(3,8);
+
+                 if(path) {
+                  var pa = path.split('.');
+                  if(pa.length == 2) {
+                    return 'http://s3-us-west-2.amazonaws.com/thankyotest/image/7/0000/0'+head1+"/"+ head2 +"/"+ pa[0] + '_80.'+pa[1];
+                  }
+                }
+                return path;
+              }
+     
+      //getting detail test
+
+      var url = window.location.search;
+         url = url.replace("?", '');
+         var hostName=window.location.hostname;
+         var url=new URLSearchParams(window.location.search);
+         var searchParams = new URLSearchParams(url); 
+         var code=searchParams.get("code");
+
+          $.ajax({
+           type: 'GET',
+           async: false,
+           url: 'http://www.tkvivo.com/um/invite/inviter?inviteCode='+code,
+           crossDomain: true,
+           dataType: 'json',
+           success: function(data) {
+               detail = data;
+               console.log(myObj);
+           }
+         });
+
+      // var detail={"returnCode":"000000","returnMsg":"Success!","record":{"id":2000029,"agency":1,"crest":null,"nickname":"Ishaq Afridi ","headimg":"1496624630437.jpg","level":4,"roomlevel":6,"vip":0,"area":null,"sex":null,"plat":"Streamkar"}}
+
+       var headimg1 = getImagePath(detail.record.headimg,detail.record.id);
+       console.log(headimg1);  
+
+       document.getElementById("senderImage").setAttribute("src",headimg1);
+      var senderName=document.getElementById("senderName");
+      senderName.innerHTML  +=detail.record.nickname;
+      console.log(detail.record.nickname);
+
+      //getting detail end
+
+         var url = window.location.search;
+         url = url.replace("?", '');
+         
+         var url=new URLSearchParams(window.location.search);
+         var searchParams = new URLSearchParams(url); 
+         var code=searchParams.get("code");
+         
+         var hostName=window.location.hostname;
+         document.getElementById("fb_link").setAttribute("href","https://"+hostName+"/sns/facebook/authorize?inviteCode="+code);
+         document.getElementById("gp_link").setAttribute("href","https://"+hostName+"/sns/google/authorize?inviteCode="+code);
+         document.getElementById("twitter_link").setAttribute("href","https://"+hostName+"/sns/twitter/authorize?inviteCode="+code);
+         document.getElementById("instagram_link").setAttribute("href","https://"+hostName+"http://www.streamkar.com/sns/instagram/authorize?inviteCode="+code);
+         
+
       </script>
       <script type="text/javascript">
          // Get the modal
