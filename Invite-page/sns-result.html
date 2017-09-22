@@ -51,21 +51,7 @@
               <div class="modal-content modal-content-download" style="text-align: center;">
                 <!-- <span class="close">&times;</span> https://play.google.com/store/apps/details?id=com.thankyo.hwgame&hl=en-->
                 <p id="returnMessageModal"></p>
-<activity android:name=".MainActivity >
-        <intent-filter>
-            <data
-                android:host="www.livebaze.com"
-                android:pathPrefix="/openmyapp"
-                android:scheme="http" >
-            </data>
 
-            <action android:name="android.intent.action.VIEW" />
-
-            <category android:name="android.intent.category.DEFAULT" />
-            <category android:name="android.intent.category.BROWSABLE" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
- </activity>
 <a href="">click me!</a>
 
 <a href="#" onclick="return newOpen()">local3</a><br/> 
@@ -80,7 +66,7 @@ function newOpen(){//184 064 323 438
     var di = document.getElementById("di");
     di.innerHTML = "app have installed";
     var ifc = document.getElementById("ifc");
-    ifc.innerHTML = "<iframe src='livebaze://play.google.com/store/apps/details?id=com.melot.thankyo&hl=en' onload='test2()'></iframe>";
+    ifc.innerHTML = "<iframe src='https://play.google.com/store/apps/details?id=com.thankyo.hwgame&hl=en' onload='test2()'></iframe>";
     return false;
 }
 </script>
