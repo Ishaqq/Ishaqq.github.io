@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <title>StreamKar</title>
+    <link rel="stylesheet" type="text/css" href="../invite/css/streamkar.css" />
+    <link rel="Shortcut Icon" href="../invite/img/favicon.png" type="image/x-icon">
+    <script type="text/javascript" src="../invite/js/streamkar.js"></script>
+    <meta http-equiv="Cache-control" content="public">
+      <meta http-equiv="Cache-control" content="private">
+      <meta http-equiv="Cache-control" content="no-cache">
+      <meta http-equiv="Expires" content="-1">
+</head>
+<body>   
+    <div class="container">
+        <div class="user-information">
+
+            <div class="information">
+               &nbsp;
+            </div>
+            <div class="information">
+               &nbsp;
+            </div>
+    <input type="button" value="Open App" id="btnOpenapp" visible="true" onClick="location.href ='intent://?ret=ReturnURLPath?QueryStringParameter=#Intent;scheme=schemename;package=PackageName;S.browser_fallback_url=https%3A%2F%2Fwww.google.co.in;end'"  />
+        
+            <script type="text/javascript">
+                $(document).ready(function () {
+     var isMobile = {
+                Android: function () {
+                    return navigator.userAgent.match(/Android/i);
+                },     
+                any: function () {
+                    return (isMobile.Android());
+                }
+            };
+            if (isMobile.Android()) {
+              $("[id$btnOpenapp]").show(); //show the button
+            }
+            else
+            {
+             $("[id$btnOpenapp]").hide();  //hide the button
+            }
+    });
+            </script>
+          </div>
+          </div>
+          
+</body>
+</html>
+
