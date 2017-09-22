@@ -66,7 +66,7 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
  </activity>
-<a href="https://play.google.com/store/apps/details?id=com.thankyo.hwgame&hl=en">click me!</a>
+<a href="">click me!</a>
 
 <a href="#" onclick="return newOpen()">local3</a><br/> 
 <div id="di"></div> 
@@ -145,10 +145,10 @@ var hostname="www.streamkar.com";
       roomInfo = "http://www.streamkar.com/" + roomId;
       href = "https://play.google.com/store/apps/details?id=com.thankyo.hwgame&hl=en";
     }
-    } else if (hostname == "kenya") {
-      roomInfo = "livebaze://www.livebaze.com/" + roomId;
-      href = "https://play.google.com/store/apps/details?id=com.melot.thankyo&hl=en";
-    }
+    // } else if (hostname == "kenya") {
+    //   roomInfo = "livebaze://www.livebaze.com/" + roomId;
+    //   href = "https://play.google.com/store/apps/details?id=com.melot.thankyo&hl=en";
+    // }
     var ifr = document.createElement('iframe');
     ifr.src = roomInfo; // open app
     ifr.style.display = 'none';
