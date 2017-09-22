@@ -51,8 +51,39 @@
               <div class="modal-content modal-content-download" style="text-align: center;">
                 <!-- <span class="close">&times;</span> https://play.google.com/store/apps/details?id=com.thankyo.hwgame&hl=en-->
                 <p id="returnMessageModal"></p>
+<activity android:name="www.streamkar.com" >
+    <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
 
-                <a href="" id="googlePlayBtn">
+        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+
+        <data
+            android:host="www.streamkar.com"
+            android:scheme="http" />
+    </intent-filter>
+</activity>
+<a href="#" onclick="return newOpen()">local3</a><br/> 
+<div id="di"></div> 
+ <div style="display:none;" id="ifc"></div>
+                <a href="intent://www.livebaze.com#Intent;scheme=http package=com.google.http.client.android;action=my_action;end"> Take a QR code </a>
+<iframe src=""></iframe>
+<script type="text/javascript">
+function test2(){
+    var di = document.getElementById("di");
+    di.innerHTML = "app have not installed";
+}
+function newOpen(){//184 064 323 438
+    var di = document.getElementById("di");
+    di.innerHTML = "app have installed";
+    var ifc = document.getElementById("ifc");
+    ifc.innerHTML = "<iframe src='https://play.google.com/store/apps/details?id=com.melot.thankyo&hl=en' onload='test2()'></iframe>";
+    return false;
+}
+</script>
+
+                <a href="" id="">
                   <img class="appStore" src="img/playStore.png" >
                 </a>
                 <a href="https://itunes.apple.com/pk/app/streamkar/id1182923162?mt=8">
@@ -100,21 +131,22 @@ if(returnCode==000000){
     // returnMessage.innerHTML  +="<p>You have <span>now</span> joined streamkar! Install the app to continue:</p>";
      returnMessageModal.innerHTML  +="<p>You have <span>successfully</span> login to Streamkar Application,Broadcast yourself,Earn and Enjoy!</p>";
 }
+
 </script>
 <script type="text/javascript">
-  $("#googlePlayBtn").click(function (e) {
-    alert("hey");
+  $(".googlePlayBtn").click(function (e) {
     var roomInfo;
     var href;
-
+var hostname="www.streamkar.com";
     console.log(hostname);
     if (hostname == "streamkar") {
-      roomInfo = "streamkar://www.streamkar.com/" + roomId;
+      roomInfo = "http://www.streamkar.com/" + roomId;
       href = "https://play.google.com/store/apps/details?id=com.thankyo.hwgame&hl=en";
-    } else if (hostname == "kenya") {
-      roomInfo = "livebaze://www.livebaze.com/" + roomId;
-      href = "https://play.google.com/store/apps/details?id=com.melot.thankyo&hl=en";
     }
+    // } else if (hostname == "kenya") {
+    //   roomInfo = "livebaze://www.livebaze.com/" + roomId;
+    //   href = "https://play.google.com/store/apps/details?id=com.melot.thankyo&hl=en";
+    // }
     var ifr = document.createElement('iframe');
     ifr.src = roomInfo; // open app
     ifr.style.display = 'none';
