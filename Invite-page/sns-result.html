@@ -122,36 +122,7 @@ if(returnCode==000000){
 
 </script>
 <script type="text/javascript">
-  $(".googlePlayBtn").click(function (e) {
-    var roomInfo;
-    var href;
-var hostname="www.streamkar.com";
-    console.log(hostname);
-    if (hostname == "streamkar") {
-      roomInfo = "http://www.streamkar.com/" + roomId;
-      href = "https://play.google.com/store/apps/details?id=com.thankyo.hwgame&hl=en";
-    }
-    // } else if (hostname == "kenya") {
-    //   roomInfo = "livebaze://www.livebaze.com/" + roomId;
-    //   href = "https://play.google.com/store/apps/details?id=com.melot.thankyo&hl=en";
-    // }
-    var ifr = document.createElement('iframe');
-    ifr.src = roomInfo; // open app
-    ifr.style.display = 'none';
-    document.body.appendChild(ifr);
-    var startTime = Date.now();
-    var t = setTimeout(function () {
-      if (!startTime || Date.now() - startTime < 800) {
-
-        // open google play app detail page
-        window.location.href = href;
-      }
-    }, 600);
-
-    window.onblur = function () {
-      clearTimeout(t);
-    };
-  });
+  
 </script>
 </body>
 </html>
