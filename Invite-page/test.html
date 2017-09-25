@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <title>StreamKar</title>
+    <link rel="stylesheet" type="text/css" href="css/streamkar.css" />
+    <link rel="Shortcut Icon" href="img/favicon.png" type="image/x-icon">
+    <script type="text/javascript" src="js/streamkar.js"></script>
+    <meta http-equiv="Cache-control" content="public">
+      <meta http-equiv="Cache-control" content="private">
+      <meta http-equiv="Cache-control" content="no-cache">
+      <meta http-equiv="Expires" content="-1">
+</head>
+<body>   
+    <div class="container">
+        <div class="user-information">
+
+            <div class="information">
+               &nbsp;
+            </div>
+            <div class="information">
+               &nbsp;
+            </div>
+           <!--  <div class="message-box">
+                <img class="box-img" src="img/invite_small.png" alt="">
+            </div> -->
+            <div class="title_bg_heading" >
+                <p> Congratulation </p>
+            </div>
+             <div id="img">
+                <div class="fun-cover">
+                     <div><img src="img/download.png" alt="" class="fun-cover"></div>
+                </div>
+            </div>
+             
+
+        </div>
+
+        <!-- The Modal -->
+            <div id="myModal" class="modal" style="display: block;">
+
+              <!-- Modal content -->
+              <div class="modal-content modal-content-download" style="text-align: center;">
+                <!-- <span class="close">&times;</span> -->
+                <p id="returnMessageModal"></p>
+
+                <a href="" onclick="getMobileOperatingSystem()">
+                  <img class="appStore"  src="img/playStore.png">
+                </a>
+               <!--  <a href="https://itunes.apple.com/pk/app/streamkar/id1182923162?mt=8">
+                     <img class="appStore" src="img/appStore.png">
+                </a> -->
+              </div>
+
+            </div>
+
+        
+        <div class="cover-image">
+            
+            <div class="content">
+               
+            </div>
+
+        </div>
+    </div>
+    <script>
+// Get the modal
+function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        return "Windows Phone";
+    }
+
+    if (/android/i.test(userAgent)) {
+        return "Android";
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+
+    return "unknown";
+}
+
+var result=getMobileOperatingSystem();
+if(result=="Android"){
+        window.location = 'streamkar://www.streamkar.com/';
+
+        setTimeout("window.location = 'https://play.google.com/store/apps/details?id=com.thankyo.hwgame&hl=en';", 3000);
+}
+if(result=="iOS"){
+ window.location='https://itunes.apple.com/pk/app/streamkar/id1182923162?mt=8';
+}
+if(result=="unknown"){
+  alert("unknown");
+}
+
+
+var returnMessageModal = document.getElementById('returnMessageModal');
+
+var url = window.location.search;
+url = url.replace("?", '');
+var url=new URLSearchParams(window.location.search);
+var searchParams = new URLSearchParams(url); 
+var returnCode=searchParams.get("returnCode");
+if(returnCode==902051){
+    // returnMessage.innerHTML  +="<p>Your <span>Account</span> has bond already:</p>";
+    returnMessageModal.innerHTML  +="<p>You have <span>successfully</span> login to Streamkar Application,Broadcast yourself,Earn and Enjoy!</p>";
+}
+if(returnCode==000000){
+    // returnMessage.innerHTML  +="<p>You have <span>now</span> joined streamkar! Install the app to continue:</p>";
+     returnMessageModal.innerHTML  +="<p>You have <span>successfully</span> login to Streamkar Application,Broadcast yourself,Earn and Enjoy!</p>";
+}
+if(returnCode==902061){
+    // returnMessage.innerHTML  +="<p>You have <span>now</span> joined streamkar! Install the app to continue:</p>";
+     returnMessageModal.innerHTML  +="<p>You have <span>successfully</span> login to Streamkar Application,Broadcast yourself,Earn and Enjoy!</p>";
+}
+
+</script>
+</body>
+</html>
+
