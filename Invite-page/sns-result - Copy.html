@@ -65,6 +65,38 @@
         </div>
     </div>
     <script>
+// Get the modal
+function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        return "Windows Phone";
+    }
+
+    if (/android/i.test(userAgent)) {
+        return "Android";
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+
+    return "unknown";
+}
+
+var result=getMobileOperatingSystem();
+if(result=="Android"){
+alert("android");
+}
+if(result=="iOS"){
+alert("ios");
+}
+if(result=="unknown"){
+  alert("unknown");
+}
+
 
 var returnMessageModal = document.getElementById('returnMessageModal');
 //var btn = document.getElementById("myBtn");
@@ -83,36 +115,6 @@ if(returnCode==000000){
     // returnMessage.innerHTML  +="<p>You have <span>now</span> joined streamkar! Install the app to continue:</p>";
      returnMessageModal.innerHTML  +="<p>You have <span>successfully</span> login to Streamkar Application,Broadcast yourself,Earn and Enjoy!</p>";
 }
-if(returnCode==902061){
-    // returnMessage.innerHTML  +="<p>You have <span>now</span> joined streamkar! Install the app to continue:</p>";
-     returnMessageModal.innerHTML  +="<p>You have <span>successfully</span> login to Streamkar Application,Broadcast yourself,Earn and Enjoy!</p>";
-}
-
-
-// Get the modal
-function getMobileOperatingSystem() {
-  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-      // Windows Phone must come first because its UA also contains "Android"
-    if (/windows phone/i.test(userAgent)) {
-        alert("Streamkar don't have any version for window phone");
-    }
-
-    if (/android/i.test(userAgent)) {
-        //Deep link URL for existing users with app already installed on their device 
-        window.location = 'streamkar://www.streamkar.com/';
-    // Download URL for new users to download the app 
-        setTimeout("window.location = 'https://play.google.com/store/apps/details?id=com.thankyo.hwgame&hl=en';", 3000);
-    }
-
-    // iOS detection from: http://stackoverflow.com/a/9039885/177710
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        window.location='https://itunes.apple.com/pk/app/streamkar/id1182923162?mt=8';
-    }
-
-    return "unknown";
-}
-// alert(getMobileOperatingSystem());
 </script>
 </body>
 </html>
