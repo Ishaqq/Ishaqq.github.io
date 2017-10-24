@@ -217,7 +217,7 @@ var p;
 var q = 1;
 var container3 = document.getElementById("demo3");
 var res3;
-container3.innerHTML += '<div class="row top-heading  glow"><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/coins.png" class="img  my_img_top"></div><div class="col-sm-8 col-md-10 col-xs-10"> <div class="row row_merg"><p class="ranking-top"> <b style="color:black !important; ">COINS RANKING</b></p></div><div class="row row_merg"><p class="font_name top-users"> Top coins reciever from this month </p></div></div>' + '</div>';
+container3.innerHTML += '<div class="row top-heading  glow"><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/coins.png" class="img  my_img_top"></div><div class="col-sm-8 col-md-10 col-xs-10"> <div class="row row_merg"><p class="ranking-top"> <b>COINS RANKING</b></p></div><div class="row row_merg"><p class="font_name top-users blood"> Top coins reciever from this month </p></div></div>' + '</div>';
 for (var p = 0; p < myObj2.data.length; p++) {
     if (myObj2.data[p].nickname.length > 11) {
         res3 = myObj2.data[p].nickname.substring(0, 11);
@@ -274,7 +274,7 @@ var w;
 var x = 1;
 var container4 = document.getElementById("demo4");
 var res4;
-container4.innerHTML += '<div class="row top-heading  glow"><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/fans.png" class="img  my_img_top"></div><div class="col-sm-8 col-md-10 col-xs-10"> <div class="row row_merg"><p class="ranking-top"> <b style="color:black !important;">FANS RANKING</b></p></div><div class="row row_merg"><p class="font_name top-users"> Top coins reciever from this month </p></div></div>' + '</div>';
+container4.innerHTML += '<div class="row top-heading  glow"><div class="col-sm-2 col-md-2 col-xs-2"> <img src="img/fans.png" class="img  my_img_top"></div><div class="col-sm-8 col-md-10 col-xs-10"> <div class="row row_merg"><p class="ranking-top blood"> <b >FANS RANKING</b></p></div><div class="row row_merg"><p class="font_name top-users blood"> Top coins reciever from this month </p></div></div>' + '</div>';
 for (var w = 0; w < myObj3.data.length; w++) {
     if (myObj3.data[w].nickname.length > 12) {
         res4 = myObj3.data[w].nickname.substring(0, 11);
