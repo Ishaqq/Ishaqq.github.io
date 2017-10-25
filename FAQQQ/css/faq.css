@@ -1,5 +1,6 @@
 body {
-    font-family: 'Roboto';font-size: 22px;
+    font-family: 'Roboto';
+    font-weight: normal;
 }
 .container-fluid {
     padding-left: 0px !important;
@@ -9,7 +10,7 @@ body {
     .faqHeader {
         font-size: 16px;
         margin: 20px;
-            font-weight: normal;
+           font-weight: normal;
             font-family: 'Roboto'; 
     }
 
@@ -37,14 +38,17 @@ body {
         -o-transform: rotate(90deg);
         transform: rotate(90deg);
         color: #454444;
+        font-weight: normal;
     }
     .panel-title{
         background-color: white;
         line-height: 15px;
+        font-weight: normal;
        
     }
     
     .panel-heading {
+        font-weight: normal;
     padding: 20px 10px !important;
    }
 .panel-collapse{
