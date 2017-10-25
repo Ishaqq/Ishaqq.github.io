@@ -1,0 +1,74 @@
+
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    } 
+
+    .faqHeader {
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    .panel-heading [data-toggle="collapse"]:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e072"; /* "play" icon */
+        float: right;
+        color: #F58723;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .panel-heading [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #454444;
+    }
+    .panel-title{
+        background-color: white;
+        line-height: 15px;
+       
+    }
+    
+    .panel-heading {
+    padding: 20px 10px !important;
+   }
+.panel-collapse{
+    background: #F2F2F2 !important;
+}  
+a:link {
+    text-decoration: none;
+}
+.panel-body{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.content {
+    padding: 0 20px 0 10px;
+    /*border-bottom: 1px solid #e4e4e4;*/
+    background: #F2F2F2;
+}
+
+.content h3 {
+        font-size: 15px;
+    font-weight: normal;
+    color: #3060b3;
+    padding-top: 0px;
+    line-height: 17px;
+}
+.content p {
+    padding: 0 0 15px 24px;
+    font-size: 13px;
+    color: #333;
+    line-height: 26px;
+}
+
