@@ -7,10 +7,13 @@
     .faqHeader {
         font-size: 16px;
         margin: 20px;
+            font-weight: normal;
+             font-family:"Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti; 
     }
 
     .panel-heading [data-toggle="collapse"]:after {
-        font-family: 'Glyphicons Halflings';
+         font-family:"Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti; 
+            font-weight: normal;
         content: "\e072"; /* "play" icon */
         float: right;
         color: #F58723;
