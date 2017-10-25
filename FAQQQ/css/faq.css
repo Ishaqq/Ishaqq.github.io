@@ -14,7 +14,7 @@
         content: "\e072"; /* "play" icon */
         float: right;
         color: #F58723;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 22px;
         /* rotate "play" icon from > (right arrow) to down arrow */
         -webkit-transform: rotate(-90deg);
