@@ -59,15 +59,15 @@ a:link {
 }
 
 .content h3 {
-        font-size: 15px;
+        font-size: 16px;
     font-weight: normal;
-    color: #3060b3;
+    color: #F58723;
     padding-top: 0px;
     line-height: 17px;
 }
 .content p {
     padding: 0 0 15px 24px;
-    font-size: 13px;
+    font-size: 14px;
     color: #333;
     line-height: 26px;
 }
