@@ -5,7 +5,7 @@
     } 
 
     .faqHeader {
-        font-size: 15px;
+        font-size: 16px;
         margin: 20px;
     }
 
@@ -14,7 +14,7 @@
         content: "\e072"; /* "play" icon */
         float: right;
         color: #F58723;
-        font-size: 15px;
+        font-size: 18px;
         line-height: 22px;
         /* rotate "play" icon from > (right arrow) to down arrow */
         -webkit-transform: rotate(-90deg);
@@ -47,6 +47,7 @@
 }  
 a:link {
     text-decoration: none;
+    font-size: 17px;
 }
 .panel-body{
     padding-top: 0px !important;
@@ -59,7 +60,7 @@ a:link {
 }
 
 .content h3 {
-        font-size: 16px;
+    font-size: 16px;
     font-weight: normal;
     color: #F58723;
     padding-top: 0px;
@@ -67,7 +68,7 @@ a:link {
 }
 .content p {
     padding: 0 0 15px 24px;
-    font-size: 14px;
+        font-size: 16px;
     color: #333;
     line-height: 26px;
 }
