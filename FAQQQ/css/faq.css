@@ -83,3 +83,6 @@ a:link {
     line-height: 26px;
 }
 
+.bold {
+    font-weight: 700!important;
+}
