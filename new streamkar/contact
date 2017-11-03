@@ -1,0 +1,415 @@
+
+<!DOCTYPE  svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Streamkar</title>
+      <meta name="description" content="Streamkar">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+      <!-- <link rel="shortcut icon" href="streamkar.png" type="image/x-icon"> -->
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body>
+      <!--Navigation bar-->
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="index.html"><img src="img/logo-icon-footer.png" class="img img-responsive" ></a>&nbsp;&nbsp;&nbsp;
+               <ul>
+                  <li class="navbar-brand2"><a href="index.html">Home</a></li>
+                  <hr class="home-line">
+               </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <!--  <li><a href="#feature">HOME</a></li> -->
+                  <li class="dropdown dropdown-hidden" >
+                     <a href="#organisations">Download App</a>
+                     <ul class="dropdown-content">
+                        <li class="content-bottom"><a href="store.html"><i class="fa fa-apple" aria-hidden="true"></i>App Store</a></li>
+                        <li class="content-bottom">
+                           <a href="#">
+                              <svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="15px" height="15px" viewBox="0 0 176 177" enable-background="new 0 0 176 177" xml:space="preserve">
+                                 <path d="M163.394,96.638l-29.717,16.382l-27.082-25.106l25.283-24.01l31.516,17.476c0,0,6.106,2.685,6.106,7.121
+                                    C169.5,93.557,163.394,96.638,163.394,96.638z M13.112,1.252c0.522-0.137,1.075-0.235,1.702-0.235c4.737,0,9.159,3.052,9.159,3.052
+                                    l97.761,54.21L100.08,81.874L13.112,1.252z M93.521,89.021l-80.214,87.404c-6.747-1.352-5.626-11.624-5.615-12.649V11.189
+                                    c0,0-0.124-8.311,5.263-9.891L93.521,89.021z M121.649,119.649l-96.658,53.281c0,0-6.163,3.647-10.14,3.647
+                                    c-0.534,0-1.027-0.048-1.486-0.135l85.702-81.383L121.649,119.649z"/>
+                              </svg>
+                              Google Play
+                           </a>
+                        </li>
+                        <li class="barcode"> <a href="#"><img src="img/qrcode.png" class="img img-responsive"></a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#courses" id="Recharge">Recharge</a>
+                     <ul class="dropdown-content">
+                        <li class="content-bottom2"><a href="#" data-target="#recharge-modal" data-toggle="modal">Recharge</a></li>
+                        <li class="content-bottom2"><a href="#" data-target="#convert-to-coins" data-toggle="modal">
+                           Convert to Coins</a>
+                        </li>
+                        <li class="content-bottom3"><a href="#">
+                           Cash Out</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li ><a class="login-top" href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!--/ Navigation bar-->
+      <!--Modal box-->
+      <div class="modal fade" id="login" role="dialog" >
+         <div class="modal-dialog modal-sm">
+            <!-- Modal content no 1-->
+            <div class="modal-content  log">
+               <div class="modal-header" style="background: url('img/modal-header.png');">
+                  <button type="button" class="close" data-dismiss="modal"><img src="img/close.png"></button>
+               </div>
+               <div class="modal-body padtrbl">
+                  <p >Please sign in first !</p>
+                  <div class="login-box-body">
+                     <div class="row modal-icon">
+                        <a href=""><img src="img/modal-fb.png"></a>
+                        <a href=""><img src="img/modal-twitter.png"></a>
+                        <a href=""><img src="img/modal-google-plus.png"></a>
+                        <a href=""><img src="img/modal-instagram.png"></a>
+                     </div>
+                     <div class="row modal-icon">
+                        <p>Sign in with username</p>
+                        <input type="text" class="form-control" id="usr" placeholder="Username">
+                        <br>
+                        <input type="text" class="form-control" id="usr" placeholder="password">
+                        <p style="text-align: center; "><button type="button" class="btn logIn-btn">Login</button></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/ Modal box-->
+      <!--Modal box 2-->
+      <div class="modal fade" id="recharge-modal" role="dialog">
+         <div class="modal-dialog modal-md">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><img src="img/close.png"></button>
+                  <div class="row">
+                     <div class="col-sm-3">
+                        <img src="img/course04.jpg" class="img img-circle recharge-img">
+                     </div>
+                     <div class="col-sm-8 recharge-head-row">
+                        <div class="row"><span class="name">Zoya Ali Awan</span></div>
+                        <div class="row"><span class="ID">ID: 123923920</span></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-body padtrbl">
+                  <div class="login-box-body">
+                     <div class="row account_info">
+                        <div class="col-sm-2 col-xs-3 recharge-balance">
+                           Balance:
+                        </div>
+                        <div class="col-sm-3 col-xs-3 recharge-dollar">
+                           <img src="img/dollar-icon.png">
+                           <span>23</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-6">
+                           Recharge Method:
+                           <span> <img src="img/icon-paypal.png" class="icon-paypal"></span>
+                        </div>
+                        <!-- <div class="col-sm-2 col-xs-3" style="padding: 0px; ">
+                           <img src="img/icon-paypal.png" style=" height: 20px;">
+                           </div> -->
+                     </div>
+                     <div class="row merg-left-15"><span>Recharge </span></div>
+                     <div class="row merg-left-15">
+                        <p>Go recharge coins now, and get a free bonus!</p>
+                     </div>
+                     <div class="row recharge-22-percent">
+                        <div class="percent-22 percent-22-pink">
+                           <div class="row text-center">
+                              <img src="img/dollar-icon.png">
+                              <span class="pink">699</span>
+                              <span>+288</span>
+                           </div>
+                           <div class="row text-center pink">
+                              $9.99
+                           </div>
+                        </div>
+                        <div class="percent-22">
+                           <div class="row text-center">
+                              <img src="img/dollar-icon.png">
+                              <span >699</span>
+                              <span>+288</span>
+                           </div>
+                           <div class="row text-center">
+                              $9.99
+                           </div>
+                        </div>
+                        <div class="percent-22">
+                           <div class="row text-center">
+                              <img src="img/dollar-icon.png">
+                              <span >699</span>
+                              <span>+288</span>
+                           </div>
+                           <div class="row text-center">
+                              $9.99
+                           </div>
+                        </div>
+                        <div class="percent-22">
+                           <div class="row text-center">
+                              <img src="img/dollar-icon.png">
+                              <span >699</span>
+                              <span>+288</span>
+                           </div>
+                           <div class="row text-center">
+                              $9.99
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <a href="javascript:;" class="next-btn">NEXT</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/ Modal box 2-->
+      <!--convert-to-coins modal-->
+      <div class="modal fade" id="convert-to-coins" role="dialog">
+         <div class="modal-dialog modal-md">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><img src="img/close.png"></button>
+                  <div class="row">
+                     <div class="col-sm-3">
+                        <img src="img/course04.jpg" class="img img-circle recharge-img">
+                     </div>
+                     <div class="col-sm-8 recharge-head-row">
+                        <div class="row"><span class="name">Zoya Ali Awan</span></div>
+                        <div class="row"><span class="ID">ID: 123923920</span></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-body padtrbl">
+                  <div class="login-box-body">
+                     <div class="row">
+                        <p>Current Diamoinds:<span><img src="img/icon-diamond.png"></span></p>
+                     </div>
+                     <div class="row recharge-22-percent">
+                        <div class="percent-22 percent-22-pink">
+                           <div class="row text-center">
+                              <img src="img/dollar-icon.png">
+                              <span class="pink">699</span>
+                              <span>+288</span>
+                           </div>
+                           <div class="row text-center pink">
+                              $9.99
+                           </div>
+                        </div>
+                        <div class="percent-22">
+                           <div class="row text-center">
+                              <img src="img/dollar-icon.png">
+                              <span >699</span>
+                              <span>+288</span>
+                           </div>
+                           <div class="row text-center">
+                              $9.99
+                           </div>
+                        </div>
+                        <div class="percent-22">
+                           <div class="row text-center">
+                              <img src="img/dollar-icon.png">
+                              <span >699</span>
+                              <span>+288</span>
+                           </div>
+                           <div class="row text-center">
+                              $9.99
+                           </div>
+                        </div>
+                        <div class="percent-22">
+                           <div class="row text-center">
+                              <img src="img/dollar-icon.png">
+                              <span >699</span>
+                              <span>+288</span>
+                           </div>
+                           <div class="row text-center">
+                              $9.99
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <a href="javascript:;" class="next-btn">NEXT</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/ convert-to-cons modal-->
+      <!--Banner-->
+    
+    <div class="container-fluid" >
+      <div style="width: 100%; margin-top: 75px;">
+     <!--  <address class="need_to_convert">
+        1 Chaplin Drive, Lane Cove West, New South Wales, Australia
+      </address> -->
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.116271954995!2d73.12009931448225!3d33.55035525145972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfed1adac553e5%3A0x4dd337941974f81!2sAscon+Heights+Lemenation!5e0!3m2!1sen!2s!4v1502259599927" width="100%" height="300" frameborder="0" style="border:0"></iframe>
+      </div>
+        <div class="container">
+              
+              <div class="row">
+        <!--contact us container left side start-->    
+        <div class="col-xs-12 col-lg-4 col-md-4 col-sm-12">
+          <div class="clear"></div><br><br>
+          <div class="portlet light bordered">
+              <div class="portlet-title">
+                <div class="caption">
+                  <i class="icon-social-dribbble font-green"></i>
+                    <span class="caption-subject font-green bold uppercase">Feel free to contact us</span>
+                </div>                                       
+              </div>
+              <div class="portlet-body">
+                <p class="contact-text text-justify">
+                  Tipping Points Technology Ltd. is bringing live interactive entertainment all across Pakistan.
+              Using state-of-the-art streaming technology, we provide live fun for users anytime,
+              anywhere. If you are interested in contacting us, kindly use the below contact methods and
+              we will get back to you shortly.
+                </p>  
+                <strong>Main Office</strong>
+                <address>
+                  Bahria Town Islamabad, Pakistan<br><br>
+                  <strong>Phone No. </strong>+92-305-5491225<br>
+                 </address>          
+              </div>
+          </div>      
+
+        </div>
+        <!--contact us container left side closed-->
+        <!--contact us container right side start-->
+            <div class="col-xs-12 col-lg-8 col-md-8 col-sm-12">
+            <div class="clear"></div><br><br>
+            <div class="portlet light bordered">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Contact Form</h3>
+                </div>
+                <div class="panel-body"> 
+                <div class="clear"></div><br>
+                <form class="form-horizontal form-bordered">
+                  <div class="form-group">
+                    <label class="col-md-2 control-label text-left contact-label">Name</label>
+                    <div class="col-md-10">
+                  <input type="text" class="form-control contact-field" placeholder="Enter First Name">
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="form-group">
+                    <label class="col-md-2 control-label text-left contact-label">Email Address</label>
+                    <div class="col-md-10">
+                  <input type="text" class="form-control contact-field" placeholder="Enter Email Address">
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="form-group">
+                     <label class="col-md-2 control-label text-left contact-label">Message</label>
+                      <div class="col-md-10">
+                  <textarea class="form-control autosizeme contact-field" id="support_content" rows="4" placeholder="Comment Here..." data-autosize-on="true" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 90px;"></textarea>
+                      </div>
+                  </div>                 
+                  <div class="portlet-body">
+                    <div class="form-actions">
+                      <div class="btn-set pull-right">
+                        <button type="button" class="btn red" onclick="feedback();">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                </div>
+            </div>
+          
+        </div>
+        <!--contact us container right side closed-->
+      </div>
+
+        </div>
+    </div>
+  
+</div>
+ 
+    <!--Footer-->
+    <footer id="footer" class="footer">
+
+      <div class="text-center">
+
+      <ul class="social-links">
+         <li class="social-icon"><a href="#link"><img src="img/facebook.png"></a></li>
+        <li class="social-icon"><a href="#link"><img src="img/twitter.png"></i></a></li>
+        <li class="social-icon"><a href="#link"><img src="img/instagram.png"></i></a></li>
+        <li class="social-icon"><a href="#link"><img src="img/youtube.png"></a></li>
+      </ul>
+      <ul class="footerlink">
+         <li ><a href="faq.html">Faq's </a></li>
+         <li><a href="#link">| </a></li>
+         <li><a href="contact.html">Contact Us</a></li>
+         <li> <a href="conditions.html">Privacy</a></li>
+         <li> <a href="" class="dot"><img src="img/dot.png" ></a></li>
+         <li> <a href="conditions.html">Terms</a></li>
+         <li> <a href="" class="dot"><img src="img/dot.png" ></a></li>
+         <li><span>© 2017 </li>
+         <li> <a href="" class="dot"><img src="img/dot.png" ></a></li>
+         <li><span>English</span></li>
+         <li><a href="#link"><img src="img/apple.png"></a></li>
+         <li><a href="#link"><img src="img/googleplay.png"></a></li>
+      </ul>
+      </div>
+    </footer>
+    <!--/ Footer-->
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/streamkar.js"></script>
+   <!--  <script src="contactform/contactform.js"></script> -->
+    <script type="text/javascript">
+      function onUpdateReady() {
+          console.log('found new version!');
+        }
+        window.applicationCache.addEventListener('updateready', onUpdateReady);
+        if(window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+          onUpdateReady();
+        }
+    </script>
+     <script type="text/javascript">
+      $(document).ready(function(){
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 70) {
+          $(".navbar-default").css("background" , "#46188d");
+        }
+
+          else{
+            $(".navbar-default").css("background" , "rgba(25, 24, 24, 0.89)");   
+          }
+        })
+      })
+    </script>
+    
+  </body>
+</html>
