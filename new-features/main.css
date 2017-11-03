@@ -1,0 +1,253 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+    font-family: "Raleway",sans-serif;
+    background: #020065;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+/*.header{background: url(../img/header.png) no-repeat; background-size: cover; background-position: center center; padding-bottom: 255px;padding-top: 180px;}
+*/
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+.invisible {
+    visibility: hidden;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+.header-text .sub-slider-text{margin: 0px; font-size:1.3em; color:#e6ecf0;font-family: 'Raleway', sans-serif; font-weight: 500;line-height: 25px;}
+ .slider-p{padding-top: 5px; font-size:1.3em; color:#e6ecf0;font-family: 'Raleway', sans-serif; font-weight: 300;line-height: 30px;}
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+@media only screen and (min-width: 1349px) {
+    .header-text-area{margin-left: 192px;
+        margin-top: -90% !important;
+    }
+    @media only screen and (min-width: 1080px) {
+    .header-text-area{margin-left: 240px;
+        margin-top: -90% !important;
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+.clearfix{clear: both}
+
+/*=========================
+     Common Css End
+===========================*/
+
+/*=========================
+	2)header Start
+===========================*/
+
+#header{padding: 40px 0px}
+
+.nav-logo{margin-right: 30px; margin-top: 12px}
+
+#footer{background: #2D312F;text-align: center; padding-top: 75px; padding-bottom: 50px;}
+#footer .block{}
+.footer-contant{}
+.footer-contant h3{color:#8C9494; font-size: 24px; font-family: 'Raleway', sans-serif; font-weight: 400;margin: 0px; padding-bottom: 30px;}
+.social-icon{}
+.social-icon a{margin-right: 10px;}
+.social-icon a i{background: #5d6461;
+border-radius: 500px;
+color: #2d312f;
+font-size: 20px;
+height: 42px;
+padding-top: 11px;
+width: 42px;}
+.support-link{padding-top: 70px;}
+.support-link ul{margin:0px; padding: 0px; list-style: none;}
+.support-link ul li{display: inline-block; padding: 0px 10px}
+.support-link ul li a{display: inline-block; color: #8C9494; font-size: 14px}
+
+/*=========================
+     footer CLOSE
+===========================*/
+
+
+#service .block-bottom{}
+#service .service-tab{}
+#service .service-tab ul{float: left;list-style: outside none none;padding: 0;margin-right: 150px;}
+#service .service-tab ul li{ border-right: 1px solid #DBE2E2;}
+#service .service-tab ul li a{color: #9FA9A9; padding-top: 23px; padding-bottom: 17px;font-size: 20px; font-family: 'Raleway', sans-serif; font-weight: 400;display: block; padding-right: 60px}
+#service .service-tab ul li a i{font-size: 45px; margin-right: 40px; position: relative;top: 10px;}
+#service .service-tab ul li a:hover{border-right: 10px solid #e74c3c;padding-right: 50px}
+#service .service-tab ul li a:hover i{color: #e74c3c}
+
+
+
+
